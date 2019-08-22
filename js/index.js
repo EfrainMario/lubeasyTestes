@@ -872,7 +872,7 @@ function paginaPedidos(){
 
     }
 
-    (function refreshPedidos(tempo){
+    /*(function refreshPedidos(tempo){
         refreshPedidosTimeoutID = setTimeout(function () {
             new PedidosController().obterPedidosForListHoje()
                 .done(function (data, textStatus, xhr) {
@@ -901,7 +901,7 @@ function paginaPedidos(){
                 });
 
         }, tempo)
-    })(30000);
+    })(30000);*/
 
 }
 
