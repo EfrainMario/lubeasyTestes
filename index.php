@@ -100,7 +100,7 @@
             </a>
             <a class="mdc-list-item" href="pag/pedidos" aria-current="page">
                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">person_pin</i>
-                <span class="mdc-list-item__text">Pedidos</span>
+                <span class="mdc-list-item__text">Pedidosss</span>
             </a>
             <a class="mdc-list-item" href="pag/produtos">
                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">fastfood</i>
