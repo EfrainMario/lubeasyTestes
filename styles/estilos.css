@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../font/MaterialIcons-Regular.eot"); /* For IE6-8 */
+    src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url("../font/MaterialIcons-Regular.woff2") format('woff2'),
+    url("../font/MaterialIcons-Regular.woff") format('woff'),
+    url("../font/MaterialIcons-Regular.ttf") format('truetype');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+.semBordaDireita{
+    border-right: none !important;
+}
+.pesquisarClicado{
+    transition: ease-in .3s;
+    transition-delay: .3s;
+    margin-top: -100px;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: contents;
+}
+.novoPedidoIcone{
+    -webkit-animation: slidein .5s ease-in-out alternate-reverse running infinite;
+    -o-animation: slidein .5s ease-in-out alternate running infinite;
+    animation: slidein .5s ease-in-out alternate-reverse running infinite;
+}
+.pin{
+    position: absolute!important;
+    padding: 5px !important;
+    background-color: #0073ff!important;
+    border-radius: 15px!important;
+}
+
+@keyframes slidein {
+    /*from {
+        color: rgb(255,14,0);
+    }
+    to {
+        color: rgb(23, 102, 255);
+    }*/
+    from {
+        border: 0 solid #ff4d00;
+        border-radius: 100px;
+    }
+    to {
+        border-radius: 100px;
+        border: 5px solid rgba(255, 77, 0, 0);
+    }
+}

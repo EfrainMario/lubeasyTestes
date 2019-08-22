@@ -1,0 +1,287 @@
+<div id="pedidosPag" class="hide">
+        <div class="mdc-layout-grid">
+            <div class="mdc-layout-grid__inner">
+                <div id="contentList" class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-3-tablet mdc-layout-grid__cell--span-4-phone">
+                    <div class="mdc-list-group" style="border-right: 1px rgba(0,0,0, .1) solid;">
+                        <div class="mdc-text-field mdc-text-field--with-trailing-icon mdc-text-field--no-label mdc-text-field--outlined" style="width:100%;" data-mdc-auto-init="MDCTextField">
+                            <i class="material-icons mdc-text-field__icon">search</i>
+                            <input type="text" id="pesquisarPedido" placeholder="Pesquisar um codigo ou nome" title="pesquisar" class="mdc-text-field__input" aria-label="Pesquisar">
+                            <div class="mdc-notched-outline">
+                                <div class="mdc-notched-outline__leading"></div>
+                                <div class="mdc-notched-outline__trailing"></div>
+                            </div>
+                        </div>
+
+                        <h3 id="txtHoje" class="mdc-list-group__subheader">Hoje</h3>
+                        <div id="pbPedidosLista" role="progressbar" class="mdc-linear-progress mdc-linear-progress--indeterminate mdc-linear-progress--closed">
+                            <div class="mdc-linear-progress__buffering-dots"></div>
+                            <div class="mdc-linear-progress__buffer"></div>
+                            <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
+                                <span class="mdc-linear-progress__bar-inner"></span>
+                            </div>
+                            <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+                                <span class="mdc-linear-progress__bar-inner"></span>
+                            </div>
+                        </div>
+                        <ul id="pedidosLista" role="listbox" style="overflow-y: auto; height: 64vh;" class="mdc-list mdc-list--two-line mdc-list--avatar-list" data-mdc-auto-init="MDCList">
+                            <!--<li class="mdc-list-item" data-mdc-auto-init="MDCRipple" tabindex="0">
+                                <i class="mdc-list-item__graphic" style="background-color: #007eff2e !important;"><i class="material-icons mdc-theme--on-primary" style="color: rgb(0, 124, 255) !important;">store</i></i>
+                                <span class="mdc-list-item__text">
+                                  <span class="mdc-list-item__primary-text">32-91823: Tio Edson</span>
+                                  <span class="mdc-list-item__secondary-text">20-06-2019 às 19:30</span>
+                                </span>
+                                <i class="material-icons mdc-list-item__meta mdc-theme--on-primary novoPedidoIcone">adjust</i>
+                            </li>
+                            <li class="mdc-list-item" data-mdc-auto-init="MDCRipple" tabindex="0">
+                                <i class="mdc-list-item__graphic" style="background-color: #007eff2e !important;">
+                                    <i class="material-icons mdc-theme--on-primary" style="color: rgb(0, 124, 255) !important;">room_service</i>
+                                </i>
+                                <span class="mdc-list-item__text">
+                                  <span class="mdc-list-item__primary-text">#32-91823: Tio Edson</span>
+                                  <span class="mdc-list-item__secondary-text">20-06-2019 às 19:30</span>
+                                </span>
+                            </li>
+                            <li class="mdc-list-item" data-mdc-auto-init="MDCRipple" tabindex="0">
+                                <i class="mdc-list-item__graphic" style="background-color: #007eff2e !important;"><i class="material-icons mdc-theme--on-primary" style="color: rgb(0, 124, 255) !important;">directions_bike</i></i>
+                                <span class="mdc-list-item__text">
+                                  <span class="mdc-list-item__primary-text">#32-91823: Tio Edson</span>
+                                  <span class="mdc-list-item__secondary-text">20-06-2019 às 19:30</span>
+                                </span>
+                            </li>
+                            <li class="mdc-list-item" data-mdc-auto-init="MDCRipple" tabindex="0">
+                                <i class="mdc-list-item__graphic" style="background-color: #007eff2e !important;"><i class="material-icons mdc-theme--on-primary" style="color: rgb(0, 124, 255) !important;">done</i></i>
+                                <span class="mdc-list-item__text">
+                                  <span class="mdc-list-item__primary-text">#32-91823: Tio Edson</span>
+                                  <span class="mdc-list-item__secondary-text">20-06-2019 às 19:30</span>
+                                </span>
+                            </li>
+
+                            -->
+                        </ul>
+                        <button id="verPedidosAnteriores" class="mdc-button hide">Ver pedidos anteriores</button>
+                        <button id="verPedidosDeHoje" class="mdc-button hide">Ver apenas pedidos de hoje</button>
+
+                    </div>
+                </div>
+                <div id="contentDetails" class="mdc-layout-grid__cell--span-9-desktop mdc-layout-grid__cell--span-5-tablet mdc-layout-grid__cell--span-4-phone hide">
+
+                    <div id="pbPedidosDetail" role="progressbar" class="mdc-linear-progress mdc-linear-progress--indeterminate mdc-linear-progress--closed">
+                        <div class="mdc-linear-progress__buffering-dots"></div>
+                        <div class="mdc-linear-progress__buffer"></div>
+                        <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
+                            <span class="mdc-linear-progress__bar-inner"></span>
+                        </div>
+                        <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+                            <span class="mdc-linear-progress__bar-inner"></span>
+                        </div>
+                    </div>
+
+                    <span id="idPedido" class="hide"></span>
+                    <span id="idCliente" class="hide"></span>
+
+                    <div id="novoPedidoContainer">
+                        <h2 class="mdc-typography--headline5">Novo Pedido!</h2>
+                        <div class="stiky-aceitar-negar mdc-elevation-transition mdc-elevation--z2" style="position:absolute; right: 20px; top: 80px; padding: 10px;">
+                            <button id="btnAceitarPedido" class="mdc-button mdc-button--dense" data-mdc-auto-init="MDCRipple">Aceitar</button>
+                            <button id="btnNegarPedido" class="mdc-button mdc-theme--text-secondary-on-background" data-mdc-auto-init="MDCRipple">Negar</button>
+                        </div>
+                    </div>
+
+
+                        <!--<p>Agora você pode rever os pedidos anteriores sem nenhum problema ou preocupação com senhas. </p>-->
+                    <div class="mdc-layout-grid__inner">
+                        <div class="mdc-layout-grid__cell">
+                            <button id="txtEstadoPedido" class="mdc-button mdc-button--unelevated" style="color: white !important;"></button>
+                            <span ><b class="medium">Código: </b><span id="codPedido"></span></span>
+                            <p><i class="material-icons mdc-chip__icon" style="padding-right: 10px; color: rgba(128,128,128,0.6)!important;">today</i> <span id="dataDeEmissao"></span> às <span id="receptLojaTiime"></span></p>
+                            <p>Tempo estimado de entrega: <span id="tempoDeEntrega"></span></p>
+                        </div>
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
+                            <i class="material-icons mdc-chip__icon" style="padding-right: 10px; color: rgba(128,128,128,0.6)!important;">person</i><span id="nomeCliente"></span>
+
+                            <p><i class="material-icons mdc-chip__icon" style="padding-right: 10px; color: rgba(128,128,128,0.6)!important;">place</i> <span id="endereco"></span> - <span id="referencia"></span></p>
+                            <b class="medium">Forma de Pagamento: </b><span id="formaDePagamento"></span><br>
+                            <span>Tipo de entrega</span>
+                            <a class="mdc-button">
+                                <i class="material-icons mdc-button__icon" aria-hidden="true">checked</i>
+                                <span class="mdc-button__label">Entrega</span>
+                            </a>
+                        </div>
+                    </div>
+                    <p>Observações: <span id="observacoes" style="color: red;"></span></p>
+                    <div class="mdc-list-group">
+                        <!--<h3 class="mdc-list-group__subheader">Produtos</h3>-->
+                        <ul id="itemsList" class="mdc-list mdc-list--avatar-list" data-mdc-auto-init="MDCList">
+                           <!-- <li class="mdc-list-item" style="background-color: rgba(255,106,0,0.13);" tabindex="0">
+                                <span class="mdc-list-item__graphic mdc-typography--headline6">Qtd.</span>
+                                <span class="mdc-list-item__text mdc-typography--headline6">Item</span>
+                                <span class="mdc-list-item__meta mdc-typography--headline6 mdc-theme--text-hint-on-light">Preço</span>
+                            </li>
+                            <li class="mdc-list-item" >
+                                <span class="mdc-list-item__graphic">1</span>
+                                <span class="mdc-list-item__text">X-Burger</span>
+                                <span class="mdc-list-item__meta mdc-typography--body2 mdc-theme--text-hint-on-light">250kz</span>
+                            </li>
+                            <li class="mdc-list-divider"></li>
+                            -->
+                        </ul>
+                        <div class="mdc-list-item">
+                            <span class="mdc-typography--headline5" style="color: rgba(128,128,128,0.6)!important;">Total</span>
+                            <span id="total" class="mdc-list-item__meta mdc-typography--headline5" style="color:black;right: 10px"></span>
+                        </div>
+                        <div class="mdc-list-item">
+                            <span class="mdc-list-item__text">SubTotal</span>
+                            <span id="subtotal" class="mdc-list-item__meta mdc-theme--text-hint-on-light" style="color: rgba(128,128,128,0.6)!important;"></span>
+                        </div>
+                        <div class="mdc-list-item">
+                            <span class="mdc-list-item__text">Taxa de Entraga</span>
+                            <span id="taxaDeEntrega" class="mdc-list-item__meta mdc-typography--body2 mdc-theme--text-hint-on-light" style="color: rgba(128,128,128,0.6)!important;"></span>
+                        </div>
+                    </div>
+                    <button id="btnEstaPronto" class="mdc-fab hide" data-mdc-auto-init="MDCRipple" style="float: right; position: fixed; right: 5vh; bottom: 5vw; color: white"><i class="material-icons mdc-fab__icon">notifications</i></button>
+                </div>
+        </div>
+        </div>
+    <div id="dialogNegarPedido" class="mdc-dialog"
+         role="alertdialog"
+         aria-modal="true"
+         aria-labelledby="titleNegarPedido"
+         aria-describedby="contentNegarPedido">
+        <div class="mdc-dialog__container">
+            <form id="frmNegarPedido">
+                <div class="mdc-dialog__surface">
+                    <!-- Title cannot contain leading whitespace due to mdc-typography-baseline-top() -->
+                    <h2 class="mdc-dialog__title" id="titleNegarPedido">Negar pedido</h2>
+                    <div class="mdc-dialog__content" id="contentNegarPedido">
+                        Os clientes gostam de saber razão pela qual o seu pedido não pode ser aceite.<br>
+                        <div class="mdc-form-field">
+                            <div class="mdc-text-field mdc-text-field--textarea">
+                                <textarea required id="isNotAcceptDetail" title="Descricao da promocao" class="mdc-text-field__input" rows="6" cols="40"></textarea>
+                                <div class="mdc-notched-outline">
+                                    <div class="mdc-notched-outline__leading"></div>
+                                    <div class="mdc-notched-outline__notch">
+                                        <label for="isNotAcceptDetail" class="mdc-floating-label">Razão</label>
+                                    </div>
+                                    <div class="mdc-notched-outline__trailing"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="pbNegarPedidoo" role="progressbar" class="mdc-linear-progress mdc-linear-progress--indeterminate mdc-linear-progress--closed">
+                            <div class="mdc-linear-progress__buffering-dots"></div>
+                            <div class="mdc-linear-progress__buffer"></div>
+                            <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
+                                <span class="mdc-linear-progress__bar-inner"></span>
+                            </div>
+                            <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+                                <span class="mdc-linear-progress__bar-inner"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <footer class="mdc-dialog__actions">
+                        <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
+                            <span class="mdc-button__label">cancelar</span>
+                        </button>
+                        <button type="submit" class="mdc-button mdc-dialog__button">
+                            <span class="mdc-button__label">Enviar</span>
+                        </button>
+                    </footer>
+                </div>
+            </form>
+        </div>
+        <div class="mdc-dialog__scrim"></div>
+
+
+    </div>
+    <div id="dialogAceitarPedido" class="mdc-dialog"
+         role="alertdialog"
+         aria-modal="true"
+         aria-labelledby="titleNegarPedido"
+         aria-describedby="contentNegarPedido">
+        <div class="mdc-dialog__container">
+            <form id="frmAceitarPedido">
+                <div class="mdc-dialog__surface">
+                    <!-- Title cannot contain leading whitespace due to mdc-typography-baseline-top() -->
+                    <h2 class="mdc-dialog__title" id="titleAceitarPedido">Aceitar pedido</h2>
+                    <div class="mdc-dialog__content" id="contentAceitarPedido">
+                        Os clientes gostam de saber quanto tempo vai demorar para preparar o pedido.<br>
+                        <div class="mdc-form-field">
+                            <div class="mdc-text-field mdc-text-field--textarea">
+                                <textarea required id="tempoDePreparo" title="Tempo de preparação do pedido" class="mdc-text-field__input" rows="6" cols="40"></textarea>
+                                <div class="mdc-notched-outline">
+                                    <div class="mdc-notched-outline__leading"></div>
+                                    <div class="mdc-notched-outline__notch">
+                                        <label for="isNotAcceptDetail" class="mdc-floating-label">Tempo de preparação do pedido</label>
+                                    </div>
+                                    <div class="mdc-notched-outline__trailing"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="pbAceitarPedido" role="progressbar" class="mdc-linear-progress mdc-linear-progress--indeterminate mdc-linear-progress--closed">
+                            <div class="mdc-linear-progress__buffering-dots"></div>
+                            <div class="mdc-linear-progress__buffer"></div>
+                            <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
+                                <span class="mdc-linear-progress__bar-inner"></span>
+                            </div>
+                            <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+                                <span class="mdc-linear-progress__bar-inner"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <footer class="mdc-dialog__actions">
+                        <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
+                            <span class="mdc-button__label">cancelar</span>
+                        </button>
+                        <button type="submit" class="mdc-button mdc-dialog__button">
+                            <span class="mdc-button__label">Aceitar</span>
+                        </button>
+                    </footer>
+                </div>
+            </form>
+        </div>
+        <div class="mdc-dialog__scrim"></div>
+
+
+    </div>
+
+    <div id="dialogEstaPronto" class="mdc-dialog"
+         role="alertdialog"
+         aria-modal="true"
+         aria-labelledby="my-dialog-title"
+         aria-describedby="my-dialog-content">
+        <div class="mdc-dialog__container">
+            <form id="frmEstaPronto">
+                <div class="mdc-dialog__surface">
+                    <!-- Title cannot contain leading whitespace due to mdc-typography-baseline-top() -->
+                    <h2 class="mdc-dialog__title" id="my-dialog-title">Está pronto!</h2>
+                    <div class="mdc-dialog__content" id="my-dialog-content">
+                        Notificar o cliente que o pedido está pronto?
+
+                    </div>
+                    <div id="pbEstaPronto" role="progressbar" class="mdc-linear-progress mdc-linear-progress--indeterminate mdc-linear-progress--closed">
+                        <div class="mdc-linear-progress__buffering-dots"></div>
+                        <div class="mdc-linear-progress__buffer"></div>
+                        <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
+                            <span class="mdc-linear-progress__bar-inner"></span>
+                        </div>
+                        <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+                            <span class="mdc-linear-progress__bar-inner"></span>
+                        </div>
+                    </div>
+                    <footer class="mdc-dialog__actions">
+                        <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
+                            <span class="mdc-button__label">Não</span>
+                        </button>
+                        <button type="submit" class="mdc-button mdc-dialog__button"> <!--data-mdc-dialog-action="yes">-->
+                            <span class="mdc-button__label">Sim</span>
+                        </button>
+                    </footer>
+                </div>
+            </form>
+        </div>
+        <div class="mdc-dialog__scrim"></div>
+    </div>
+
+    <script src="../js/verify.js"></script>
+</div>

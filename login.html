@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-PT" class="mdc-typography">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Lubeasy</title>
+    <style>
+        :root{
+            --mdc-theme-primary : #fe4600 !important;
+            --mdc-theme-secondary : #fe4600 !important;
+            --mdc-theme-on-primary : #ff8800 !important;
+            --mdc-theme-on-secondary : rgb(255, 80, 0) !important;
+
+            --mdc-theme-background: #000000 !important;
+            /*--mdc-theme-surface: #000000 !important;*/
+            --mdc-theme-on-surface: #000000 !important;
+
+            --mdc-theme-text-primary-on-light: rgba(255, 80, 0, 0.87) !important;
+            --mdc-theme-text-secondary-on-light: rgba(0, 0, 0, 0.87) !important;
+            --mdc-theme-text-hint-on-light: rgba(0, 0, 0, 0.87) !important;
+            /*--mdc-theme-text-disabled-on-light: !important;
+            --mdc-theme-text-icon-on-light: !important;*/
+
+        }
+        body {
+            display: flex;
+            min-height: calc(100vh - 64px);
+        }
+        .mdc-drawer-app-content {
+            flex: auto;
+            overflow:hidden;
+            position: relative;
+        }
+        .main-content {
+            overflow-y: hidden;
+            height: calc(100% - 64px);
+        }
+        #app-bar {
+            background-color: white;
+            position: absolute;
+            color: rgba(0,0,0,0.87);
+        }
+        .mdc-top-app-bar {
+            z-index: 7;
+        }
+        .txtCriarConta{
+            color: #0073ff;
+            text-decoration: none;
+        }
+        .txtCriarConta:hover{
+            color: #0021ff;
+        }
+    </style>
+    <link rel="stylesheet" href="styles/material-components-web.min.css">
+    <link href="styles/estilos.css" rel="stylesheet">
+
+</head>
+<body>
+
+​
+<div class="mdc-drawer-app-content mdc-top-app-bar--fixed-adjust">
+    <main class="main-content" id="main-content">
+        <div class="mdc-layout-grid" style="height: 700px !important;">
+            <div class="mdc-layout-grid__inner" style="height: calc(100% - 64px - 256px); margin-top: 100px;">
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--align-middle"></div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--align-middle"
+                     style="text-align: center;">
+
+
+                    <!--<h2 class="mdc-typography--headline3" style="top:-25%;text-align: center; color: #009dff">Ecossistema Facial</h2>-->
+                    <div>
+                        <div style="background-color: #0D3349; width: 125px;height: 125px; margin-left: calc(50% - 64px);">
+                            <img src="#" alt="">
+                        </div>
+                        <br>
+                        <form id="frmLogin">
+                            <div class="mdc-text-field mdc-text-field--with-leading-icon" data-mdc-auto-init="MDCTextField">
+                                <i class="material-icons mdc-text-field__icon">email</i>
+                                <input id="email" required type="email" class="mdc-text-field__input" title="email">
+                                <div class="mdc-line-ripple"></div>
+                                <label class="mdc-floating-label">Email</label>
+                            </div>
+
+                            <br>
+                            <br>
+
+
+                            <div class="mdc-text-field mdc-text-field--with-leading-icon" data-mdc-auto-init="MDCTextField">
+                                <i class=" mdc-text-field__icon">*</i>
+                                <input id="senha" required type="password" class="mdc-text-field__input" title="senha">
+                                <div class="mdc-line-ripple"></div>
+                                <label class="mdc-floating-label">Senha</label>
+                            </div>
+                            <br>
+                            <br>
+                            <div id="loginPB" role="progressbar" class="mdc-linear-progress mdc-linear-progress--indeterminate mdc-linear-progress--closed">
+                                <div class="mdc-linear-progress__buffering-dots"></div>
+                                <div class="mdc-linear-progress__buffer"></div>
+                                <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
+                                    <span class="mdc-linear-progress__bar-inner"></span>
+                                </div>
+                                <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+                                    <span class="mdc-linear-progress__bar-inner"></span>
+                                </div>
+                            </div>
+                            <button class="mdc-button mdc-ripple-surface" type="submit" data-mdc-auto-init="MDCRipple">
+                                <span class="mdc-button__label">Entrar</span>
+                            </button>
+
+                        </form>
+
+                        <div class="mdc-snackbar">
+                            <div class="mdc-snackbar__surface">
+                                <div class="mdc-snackbar__label"
+                                     role="status"
+                                     aria-live="polite">
+                                    Problemas com o login. Verifique as credenciais e a ligação com a internet
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <p class="mdc-typography--caption" style="text-align: center;">Ainda não uma conta? <a href="criarconta.html" class="txtCriarConta">Entrar</a></p>
+                    <p class="mdc-typography--caption" style="color: grey;text-align: center;">Lubeasy &copy 2019</p>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </main>
+</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/material-components-web.min.js"></script>
+<script type="module" src="js/login.js"></script>
+
+<script>
+    window.mdc.autoInit();
+    /*const drawer = mdc.drawer.MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
+    const topAppBar = mdc.topAppBar.MDCTopAppBar.attachTo(document.getElementById('app-bar'));
+    topAppBar.setScrollTarget(document.getElementById('main-content'));
+    topAppBar.listen('MDCTopAppBar:nav', () => {
+        drawer.open = !drawer.open;
+    });*/
+</script>
+
+</body>
+</html>

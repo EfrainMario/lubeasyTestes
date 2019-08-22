@@ -1,0 +1,24 @@
+{
+  "name": "nodeApi",
+  "version": "1.0.0",
+  "description": "class One",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm install express --save"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "busboy": "^0.2.14",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.5",
+    "express-upload": "^0.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.24.0",
+    "mysql": "^2.17.1",
+    "node-uuid": "^1.4.8",
+    "request": "^2.88.0",
+    "sharp": "^0.22.1"
+  }
+}

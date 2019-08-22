@@ -1,0 +1,280 @@
+<div id="definicoesPag" class="hide">
+    <form id="frmDefinicoes">
+        <div class="mdc-layout-grid">
+        <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-4-phone" >
+                <div class="mdc-text-field" data-mdc-auto-init="MDCTextField" style="width: 100%;">
+                    <input required name="nome" type="text" class="mdc-text-field__input" title="nome" >
+                    <div class="mdc-line-ripple"></div>
+                    <label class="mdc-floating-label mdc-floating-label--float-above">Nome</label>
+                </div>
+            </div>
+            <div class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-4-phone" >
+                    <div class="mdc-text-field" data-mdc-auto-init="MDCTextField" style="width: 100%;">
+                        <input name="localDeReferencia" type="text" class="mdc-text-field__input" title="localDeReferencia">
+                        <div class="mdc-line-ripple"></div>
+                        <label class="mdc-floating-label mdc-floating-label--float-above">Local de Referência</label>
+                    </div>
+            </div>
+            <div class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-4-phone" >
+                    <div class="mdc-text-field" data-mdc-auto-init="MDCTextField" style="width: 100%;">
+                        <input required name="endereco" type="text" class="mdc-text-field__input" title="endereço">
+                        <div class="mdc-line-ripple"></div>
+                        <label class="mdc-floating-label mdc-floating-label--float-above">Endereço</label>
+                    </div>
+            </div>
+            <div class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-4-phone">
+                <div class="mdc-text-field mdc-text-field--with-leading-icon" data-mdc-auto-init="MDCTextField" style="width: 100%;">
+                    <i class="material-icons mdc-text-field__icon">query_builder</i>
+                    <input required name="horario" type="text" class="mdc-text-field__input" title="horario">
+                    <div class="mdc-line-ripple"></div>
+                    <label class="mdc-floating-label mdc-floating-label--float-above">Horário</label>
+                </div>
+            </div>
+            <div class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-4-phone">
+                <div class="mdc-text-field mdc-text-field--with-leading-icon" data-mdc-auto-init="MDCTextField" style="width: 100%;">
+                    <i class="material-icons mdc-text-field__icon">phone</i>
+                    <input required name="telefone" type="number" min="900000000" max="244999999999" class="mdc-text-field__input" title="telefone">
+                    <div class="mdc-line-ripple"></div>
+                    <label class="mdc-floating-label mdc-floating-label--float-above">Telefone</label>
+                </div>
+            </div>
+            <div class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-4-phone">
+                <div class="mdc-text-field mdc-text-field--textarea" data-mdc-auto-init="MDCTextField">
+                    <textarea title="objectivo" required name="objectivo" class="mdc-text-field__input" rows="2" cols="40"></textarea>
+                    <div class="mdc-notched-outline">
+                        <div class="mdc-notched-outline__leading"></div>
+                        <div class="mdc-notched-outline__notch">
+                            <label class="mdc-floating-label mdc-floating-label--float-above">Objectivo</label>
+                        </div>
+                        <div class="mdc-notched-outline__trailing"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-4-phone">
+                <div class="mdc-select" data-mdc-auto-init="MDCSelect" style="width: 100%;">
+                    <i class="mdc-select__dropdown-icon"></i>
+                    <select id="cat" name="categoria" class="mdc-select__native-control">
+                            <option value="Restaurante">Restaurante</option>
+                            <option value="Pizaria">Pizaria</option>
+                            <option value="Hamburgaria">Hamburgaria</option>
+                            <option value="Churrascaria">Churrascaria</option>
+                            <option value="Pastelaria">Pastelaria</option>
+                            <option value="Padaria">Padaria</option>
+                    </select>
+                    <label for="cat" class="mdc-floating-label">Categoria</label>
+                    <div class="mdc-line-ripple"></div>
+                </div>
+            </div>
+            <div class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-4-phone">
+                <div class="mdc-select" data-mdc-auto-init="MDCSelect" style="width: 100%;">
+                    <i class="mdc-select__dropdown-icon"></i>
+                    <select id="prov" name="provincia" class="mdc-select__native-control">
+                        <option value="Huila" >Huila</option>
+                    </select>
+                    <label for="prov" class="mdc-floating-label">Província</label>
+                    <div class="mdc-line-ripple"></div>
+                </div>
+            </div>
+            <div class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-4-phone">
+                <div class="mdc-select" data-mdc-auto-init="MDCSelect" style="width: 100%;">
+                    <i class="mdc-select__dropdown-icon"></i>
+                    <select id="mun" name="municipio" class="mdc-select__native-control">
+                        <option value="Caconda">Caconda</option>
+                        <option value="Cacula">Cacula</option>
+                        <option value="Caluquembe">Caluquembe</option>
+                        <option value="Chiage">Chiage</option>
+                        <option value="Chibia">Chibia</option>
+                        <option value="Chicomba">Chicomba</option>
+                        <option value="Chipindo">Chipindo</option>
+                        <option value="Humpata">Humpata</option>
+                        <option value="Jamba">Jamba</option>
+                        <option value="Kuvango">Kuvango</option>
+                        <option value="Lubango">Lubango</option>
+                        <option value="Matala">Matala</option>
+                        <option value="Quilengues">Quilengues</option>
+                        <option value="Quipungo">Quipungo</option>
+                    </select>
+                    <label for="mun" class="mdc-floating-label">Municipio</label>
+                    <div class="mdc-line-ripple"></div>
+                </div>
+            </div>
+            <div class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-4-phone">
+                <div class="mdc-form-field mdc-form-field--align-end">
+                    <a href="#" id="btnRedefinirSenha" class="mdc-button mdc-theme--text-secondary-on-light">Redefinir Senha</a>
+                </div>
+            </div>
+        </div>
+            <h5 class="mdc-typography--headline5">Pagamentos</h5>
+        <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-4-phone">
+                <div class="mdc-form-field mdc-form-field--align-end">
+                    <div class="mdc-checkbox" data-mdc-auto-init="MDCCheckbox">
+                        <input type="checkbox" class="mdc-checkbox__native-control" name="typeService" title="Faz serviços de entrega ao domicílio"/>
+                        <div class="mdc-checkbox__background">
+                            <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                                <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+                            </svg>
+                            <div class="mdc-checkbox__mixedmark"></div>
+                        </div>
+                    </div>
+                    <label>Faz serviços de entrega</label>
+                </div>
+
+
+                <div class="mdc-text-field" data-mdc-auto-init="MDCTextField">
+                    <input name="taxaDeEntrega" type="number" class="mdc-text-field__input" title="Taxa de Entrega em Kwanzas">
+                    <div class="mdc-line-ripple"></div>
+                    <label class="mdc-floating-label mdc-floating-label--float-above">Taxa de Entrega</label>
+                </div>
+
+            </div>
+            <div class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-4-phone">
+                <div class="mdc-form-field mdc-form-field--align-end">
+                    <div class="mdc-checkbox" data-mdc-auto-init="MDCCheckbox">
+                        <input type="checkbox" class="mdc-checkbox__native-control" name="payMoney" title="Aceita pagamentos à dinehiro">
+                        <div class="mdc-checkbox__background">
+                            <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                                <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+                            </svg>
+                            <div class="mdc-checkbox__mixedmark"></div>
+                        </div>
+                    </div>
+                    <label>à dinheiro</label>
+                </div>
+            </div>
+            <div class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-4-phone">
+                <div class="mdc-form-field mdc-form-field--align-end">
+                    <div class="mdc-checkbox" data-mdc-auto-init="MDCCheckbox">
+                        <input type="checkbox" class="mdc-checkbox__native-control" name="payTPA" title="Aceita pagamentos por TPA">
+                        <div class="mdc-checkbox__background">
+                            <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                                <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+                            </svg>
+                            <div class="mdc-checkbox__mixedmark"></div>
+                        </div>
+                    </div>
+                    <label>TPA (máquina)</label>
+                </div>
+            </div>
+            <div class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-4-phone">
+                <div class="mdc-form-field mdc-form-field--align-end">
+                    <div class="mdc-checkbox" data-mdc-auto-init="MDCCheckbox">
+                        <input type="checkbox" class="mdc-checkbox__native-control" title="Aceita pagamentos online" name="payOnline">
+                        <div class="mdc-checkbox__background">
+                            <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                                <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+                            </svg>
+                            <div class="mdc-checkbox__mixedmark"></div>
+                        </div>
+                    </div>
+                    <label>online (kamba - carteira virtual)</label>
+                </div>
+            </div>
+        </div>
+            <h5 class="mdc-typography--headline5">Logotipo</h5>
+            <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-4-phone" >
+                        <button type="button" id="btnAlterarLogotipo" class="mdc-button mdc-theme--text-secondary-on-light">Alterar logotipo</button>
+                </div>
+            </div>
+
+
+            <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell--span-10-desktop mdc-layout-grid__cell--span-6-tablet mdc-layout-grid__cell--span-3-phone"></div>
+                <div class="mdc-layout-grid__cell--span-2-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-1-phone">
+                    <button type="submit" class="mdc-button" >Guardar</button>
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+    <div id="dialogEditLogotipoRestaurante" class="mdc-dialog"
+         role="alertdialog"
+         aria-modal="true"
+         aria-labelledby="titleEditLogotipoRestaurante"
+         aria-describedby="contentEditLogotipoRestaurante">
+        <div class="mdc-dialog__container">
+            <form id="frmEditLogotipoRestaurante">
+                <div class="mdc-dialog__surface">
+                    <!-- Title cannot contain leading whitespace due to mdc-typography-baseline-top() -->
+                    <h2 class="mdc-dialog__title" id="titleEditLogotipoRestaurante">Editar logotipo do restaurante</h2>
+                    <div class="mdc-dialog__content" id="contentEditLogotipoRestaurante">
+                        Adicionar ou alterar o logotipo do restaurante<br>
+                        <div class="mdc-text-field" data-mdc-auto-init="MDCTextField">
+                            <input name="logotipo" required type="file" class="mdc-text-field__input" title="logotipo" accept="image/png, image/jpeg">
+                            <div class="mdc-line-ripple"></div>
+                        </div>
+                        <br>
+                        <br>
+
+                        <div id="pbEditLogotipoRestaurante" role="progressbar" class="mdc-linear-progress mdc-linear-progress--indeterminate mdc-linear-progress--closed">
+                            <div class="mdc-linear-progress__buffering-dots"></div>
+                            <div class="mdc-linear-progress__buffer"></div>
+                            <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
+                                <span class="mdc-linear-progress__bar-inner"></span>
+                            </div>
+                            <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+                                <span class="mdc-linear-progress__bar-inner"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <footer class="mdc-dialog__actions">
+                        <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
+                            <span class="mdc-button__label">cancelar</span>
+                        </button>
+                        <button type="submit" class="mdc-button mdc-dialog__button"> <!--data-mdc-dialog-action="yes">-->
+                            <span class="mdc-button__label">Adicionar</span>
+                        </button>
+                    </footer>
+                </div>
+            </form>
+        </div>
+        <div class="mdc-dialog__scrim"></div>
+    </div>
+
+    <div id="dialogRedefinirSenha" class="mdc-dialog"
+         role="alertdialog"
+         aria-modal="true"
+         aria-labelledby="titleEditProduto"
+         aria-describedby="contentEditProduto">
+        <div class="mdc-dialog__container">
+            <form id="frmRedefinirSenha">
+                <div class="mdc-dialog__surface">
+                    <!-- Title cannot contain leading whitespace due to mdc-typography-baseline-top() -->
+                    <h2 class="mdc-dialog__title" id="titleEditProduto">Redefinir Senha</h2>
+                    <div class="mdc-dialog__content" id="contentEditProduto">
+                        Se esqueceu a senha ou alguém mal intencionado descobriu a sua senha, pode mudar a senha<br>
+                        <div class="mdc-text-field mdc-text-field--with-leading-icon" data-mdc-auto-init="MDCTextField">
+                            <i class=" mdc-text-field__icon">*</i>
+                            <input id="novaSenha" name="novaSenha" required type="password" class="mdc-text-field__input">
+                            <div class="mdc-line-ripple"></div>
+                            <label for="novaSenha" class="mdc-floating-label">Nova Senha</label>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="mdc-text-field mdc-text-field--with-leading-icon" data-mdc-auto-init="MDCTextField">
+                            <i class=" mdc-text-field__icon">*</i>
+                            <input id="confirmacaoSenha" name="confirmacaoSenha" required type="password" class="mdc-text-field__input">
+                            <div class="mdc-line-ripple"></div>
+                            <label for="confirmacaoSenha" class="mdc-floating-label">Confirmar Senha</label>
+                        </div>
+                    </div>
+                    <footer class="mdc-dialog__actions">
+                        <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
+                            <span class="mdc-button__label">cancelar</span>
+                        </button>
+                        <button type="submit" class="mdc-button mdc-dialog__button"> <!--data-mdc-dialog-action="yes">-->
+                            <span class="mdc-button__label">entrar</span>
+                        </button>
+                    </footer>
+                </div>
+            </form>
+        </div>
+        <div class="mdc-dialog__scrim"></div>
+    </div>
+
+    <script src="../js/verify.js"></script>
+</div>

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-PT" class="mdc-typography">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Lubeasy</title>
+    <style>
+        :root{
+            --mdc-theme-primary : #fe4600 !important;
+            --mdc-theme-secondary : #fe4600 !important;
+            --mdc-theme-on-primary : #ff8800 !important;
+            --mdc-theme-on-secondary : rgb(255, 80, 0) !important;
+
+            --mdc-theme-background: #000000 !important;
+            /*--mdc-theme-surface: #000000 !important;*/
+            --mdc-theme-on-surface: #000000 !important;
+
+            --mdc-theme-text-primary-on-light: rgba(255, 80, 0, 0.87) !important;
+            --mdc-theme-text-secondary-on-light: rgba(0, 0, 0, 0.87) !important;
+            --mdc-theme-text-hint-on-light: rgba(0, 0, 0, 0.87) !important;
+            /*--mdc-theme-text-disabled-on-light: !important;
+            --mdc-theme-text-icon-on-light: !important;*/
+
+        }
+        body {
+            display: flex;
+            min-height: calc(100vh - 64px);
+        }
+        .mdc-drawer-app-content {
+            flex: auto;
+            overflow:hidden;
+            position: relative;
+        }
+        .main-content {
+            overflow-y: hidden;
+            height: calc(100% - 64px);
+        }
+        #app-bar {
+            background-color: white;
+            position: absolute;
+            color: rgba(0,0,0,0.87);
+        }
+        .mdc-top-app-bar {
+            z-index: 7;
+        }
+        .txtCriarConta{
+            color: #0073ff;
+            text-decoration: none;
+        }
+        .txtCriarConta:hover{
+            color: #0021ff;
+        }
+
+    </style>
+    <link rel="stylesheet" href="styles/material-components-web.min.css">
+    <link href="styles/estilos.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+<header class="mdc-top-app-bar" id="app-bar" style="left: 0;top: 0;">
+    <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <a href="#" id="open_drawer" class="demo-menu material-icons mdc-top-app-bar__navigation-icon">store</a>
+            <span class="mdc-top-app-bar__title">Lubeasy</span>
+        </section>
+
+    </div>
+</header>
+
+​
+<div class="mdc-drawer-app-content mdc-top-app-bar--fixed-adjust">
+    <main class="main-content" id="main-content">
+        <div class="mdc-layout-grid">
+            <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell--span-12">
+                    <div style="position: absolute; margin-top: calc(43% - 64px)">
+                    <div style="background-color: #0D3349; width: 125px;height: 125px; margin-left: calc(50% - 64px);">
+                        <img src="#" alt="">
+                    </div>
+                    <br>
+
+                        <div class="mdc-typography--headline3" style="text-align: center">Parabêns!</div>
+                        <div class="mdc-typography--headline5" style="text-align: center">Cadastraste o teu estabelecimento no Lubeasy</div>
+                        <p class="mdc-typography--body1" style="text-align: center">Agora clique no link que te enviamos por email para confirmares a tua conta</p>
+                        <div class="mdc-snackbar">
+                            <div class="mdc-snackbar__surface">
+                                <div class="mdc-snackbar__label"
+                                     role="status"
+                                     aria-live="polite">
+                                    Problemas com o login. Verifique as credenciais e a ligação com a internet
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="mdc-typography--caption" style="color: grey;text-align: center;">Lubeasy &copy 2019</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/material-components-web.min.js"></script>
+<script type="module" src="js/criarconta.js"></script>
+<script>
+    window.mdc.autoInit();
+</script>
+
+</body>
+</html>

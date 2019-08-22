@@ -1,0 +1,287 @@
+<div id="promocoesPag" class="hide">
+    <div class="mdc-layout-grid">
+        <div id="promocaoList" class="mdc-layout-grid__inner">
+
+        </div>
+    </div>
+    <div id="promocaoDetails" class="mdc-layout-grid hide" style="margin-top: -20px;">
+        <div  class="mdc-layout-grid__inner ">
+            <div class="mdc-layout-grid__cell--span-3 mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-4-phone">
+                <div class="mdc-card mdc-elevation--z0">
+                    <div class="mdc-card__primary-action" tabindex="0">
+                        <div id="imagemPromocaoDetailhe" class="mdc-card__media mdc-card__media--16-9" style="background-color: grey;"></div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="mdc-layout-grid__cell--span-9 mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-4-phone">
+                <h5 id="nomePromocaoDetalhe" class="mdc-typography--headline5"></h5>
+                <p><b>De </b><span id="dataDeCriacaoPromocaoDetalhe"></span><b> até </b><span id="dataTerminoPromocaoDetalhe"></span></p>
+                <p><b>Preço: </b><span id="precoPromocaoDetalhe"></span> kz</p>
+                <p><b>Descrição: </b></p><span id="descricaoPromocaoDetalhe" style="text-align: justify;"></span>
+                <br>
+                <br>
+                <br>
+
+                <button id="btnEditPromocao" class="mdc-fab" data-mdc-auto-init="MDCRipple" style="float: right; position: fixed; right: 5vh; bottom: 5vw; color: white;"><i class="material-icons mdc-fab__icon">edit</i></button>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="dialogAddPromocao" class="mdc-dialog"
+         role="alertdialog"
+         aria-modal="true"
+         aria-labelledby="my-dialog-title"
+         aria-describedby="my-dialog-content">
+        <div class="mdc-dialog__container">
+            <form id="frmAddPromocao" name="frmAddPromocao">
+                <div class="mdc-dialog__surface">
+                    <!-- Title cannot contain leading whitespace due to mdc-typography-baseline-top() -->
+                    <h2 class="mdc-dialog__title" id="my-dialog-title">Adicionar Promocao</h2>
+                    <div class="mdc-dialog__content" id="my-dialog-content">
+                        Adicione um promocao à prateleira<br>
+                            <div class="mdc-text-field" data-mdc-auto-init="MDCTextField">
+                                <input id="imagemAddPromocao" name="imagem" required type="file" class="mdc-text-field__input" title="imagem" accept="image/png, image/jpeg">
+                                <div class="mdc-line-ripple"></div>
+                            </div>
+                        <br>
+                        <br>
+                        <div class="mdc-text-field" data-mdc-auto-init="MDCTextField">
+                            <input id="nomeAddPromocao" required name="nome" type="text" class="mdc-text-field__input" title="nome">
+                            <div class="mdc-line-ripple"></div>
+                            <label class="mdc-floating-label">Nome</label>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="mdc-form-field">
+                            <span>Data de término: </span>
+                            <div class="mdc-text-field" data-mdc-auto-init="MDCTextField">
+                                <input name="dataTermino" required type="date" class="mdc-text-field__input" title="Data de termino">
+                                <div class="mdc-line-ripple"></div>
+                            </div>
+                        </div>
+                        <div class="mdc-form-field mdc-form-field--align-end">
+                            <span>Preço: </span>
+                            <div class="mdc-text-field" data-mdc-auto-init="MDCTextField">
+                                <input type="number" step="0.01" name="preco" required class="mdc-text-field__input" title="preço">
+                                <div class="mdc-line-ripple"></div>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="mdc-form-field">
+                            <div class="mdc-text-field mdc-text-field--textarea" data-mdc-auto-init="MDCTextField">
+                                <textarea id="descricaoAddPromocao" required name="descricao" class="mdc-text-field__input" rows="2" cols="40"></textarea>
+                                <div class="mdc-notched-outline">
+                                    <div class="mdc-notched-outline__leading"></div>
+                                    <div class="mdc-notched-outline__notch">
+                                        <label for="descricaoAddPromocao" class="mdc-floating-label">descricao</label>
+                                    </div>
+                                    <div class="mdc-notched-outline__trailing"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="pbAddPromocao" role="progressbar" class="mdc-linear-progress mdc-linear-progress--indeterminate mdc-linear-progress--closed">
+                        <div class="mdc-linear-progress__buffering-dots"></div>
+                        <div class="mdc-linear-progress__buffer"></div>
+                        <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
+                            <span class="mdc-linear-progress__bar-inner"></span>
+                        </div>
+                        <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+                            <span class="mdc-linear-progress__bar-inner"></span>
+                        </div>
+                    </div>
+                    <footer class="mdc-dialog__actions">
+                        <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
+                            <span class="mdc-button__label">cancelar</span>
+                        </button>
+                        <button type="submit" class="mdc-button mdc-dialog__button"> <!--data-mdc-dialog-action="yes">-->
+                            <span class="mdc-button__label">Adicionar</span>
+                        </button>
+                    </footer>
+                </div>
+            </form>
+        </div>
+        <div class="mdc-dialog__scrim"></div>
+    </div>
+    <div id="dialogEditPromocao" class="mdc-dialog"
+         role="alertdialog"
+         aria-modal="true"
+         aria-labelledby="titleEditPromocao"
+         aria-describedby="contentEditPromocao">
+        <div class="mdc-dialog__container">
+            <form id="frmEditPromocao">
+                <div class="mdc-dialog__surface">
+                    <!-- Title cannot contain leading whitespace due to mdc-typography-baseline-top() -->
+                    <h2 class="mdc-dialog__title" id="titleEditPromocao">Editar Promocao</h2>
+                    <div class="mdc-dialog__content" id="contentEditPromocao">
+                        Se inseriu algum dado errado, pode editar um promocao aqui<br>
+                        <div class="mdc-card mdc-elevation--z0">
+                            <div class="mdc-card__primary-action" tabindex="0">
+                                <div id="imagemViewEditPromocao" class="mdc-card__media mdc-card__media--16-9" style="background-color: grey;"></div>
+                            </div>
+                            <button id="btnAlterarImagem" type="button" class="mdc-button">Alterar</button>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="mdc-text-field" data-mdc-auto-init="MDCTextField">
+                            <input id="nomeEditPromocao" required type="text" class="mdc-text-field__input" title="nome">
+                            <div class="mdc-line-ripple"></div>
+                            <label class="mdc-floating-label mdc-floating-label--float-above">Nome</label>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="mdc-form-field">
+                            <span>Data de término: </span>
+                            <div class="mdc-text-field" data-mdc-auto-init="MDCTextField">
+                                <input id="dataTerminoEditPromocao" type="date" class="mdc-text-field__input" title="Data de término">
+                                <div class="mdc-line-ripple"></div>
+                            </div>
+                        </div>
+                        <div class="mdc-form-field mdc-form-field--align-end">
+                            <span>Preço: </span>
+                            <div class="mdc-text-field" data-mdc-auto-init="MDCTextField">
+                                <input type="number" step="0.01" id="precoEditPromocao" required class="mdc-text-field__input" title="preço">
+                                <div class="mdc-line-ripple"></div>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="mdc-form-field">
+                            <div class="mdc-text-field mdc-text-field--textarea">
+                                <textarea id="descricaoEditPromocao" title="Descricao da promocao" class="mdc-text-field__input" rows="2" cols="40"></textarea>
+                                <div class="mdc-notched-outline">
+                                    <div class="mdc-notched-outline__leading"></div>
+                                    <div class="mdc-notched-outline__notch">
+                                        <label for="descricaoAddPromocao" class="mdc-floating-label mdc-floating-label--float-above">descricao</label>
+                                    </div>
+                                    <div class="mdc-notched-outline__trailing"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="pbEditPromocao" role="progressbar" class="mdc-linear-progress mdc-linear-progress--indeterminate mdc-linear-progress--closed">
+                            <div class="mdc-linear-progress__buffering-dots"></div>
+                            <div class="mdc-linear-progress__buffer"></div>
+                            <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
+                                <span class="mdc-linear-progress__bar-inner"></span>
+                            </div>
+                            <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+                                <span class="mdc-linear-progress__bar-inner"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <footer class="mdc-dialog__actions">
+                        <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
+                            <span class="mdc-button__label">cancelar</span>
+                        </button>
+                        <button type="submit" class="mdc-button mdc-dialog__button">
+                            <span class="mdc-button__label">Adicionar</span>
+                        </button>
+                    </footer>
+                </div>
+            </form>
+        </div>
+        <div class="mdc-dialog__scrim"></div>
+    </div>
+
+    <div id="dialogEditImagemPromocao" class="mdc-dialog"
+         role="alertdialog"
+         aria-modal="true"
+         aria-labelledby="titleEditImagemPromocao"
+         aria-describedby="contentEditImagemPromocao">
+        <div class="mdc-dialog__container">
+            <form id="frmEditImagemPromocao">
+                <div class="mdc-dialog__surface">
+                    <!-- Title cannot contain leading whitespace due to mdc-typography-baseline-top() -->
+                    <h2 class="mdc-dialog__title" id="titleEditImagemPromocao">Editar Promocao</h2>
+                    <div class="mdc-dialog__content" id="contentEditImagemPromocao">
+                        Edite a imagem do promocao para uma mais atraente<br>
+                        <div class="mdc-text-field" data-mdc-auto-init="MDCTextField">
+                            <input name="imagemEditPromocao" required type="file" class="mdc-text-field__input" title="imagem" accept="image/png, image/jpeg">
+                            <div class="mdc-line-ripple"></div>
+                        </div>
+                        <br>
+                        <br>
+
+                        <div id="pbEditImagemPromocao" role="progressbar" class="mdc-linear-progress mdc-linear-progress--indeterminate mdc-linear-progress--closed">
+                            <div class="mdc-linear-progress__buffering-dots"></div>
+                            <div class="mdc-linear-progress__buffer"></div>
+                            <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
+                                <span class="mdc-linear-progress__bar-inner"></span>
+                            </div>
+                            <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+                                <span class="mdc-linear-progress__bar-inner"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <footer class="mdc-dialog__actions">
+                        <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
+                            <span class="mdc-button__label">cancelar</span>
+                        </button>
+                        <button type="submit" class="mdc-button mdc-dialog__button"> <!--data-mdc-dialog-action="yes">-->
+                            <span class="mdc-button__label">Adicionar</span>
+                        </button>
+                    </footer>
+                </div>
+            </form>
+        </div>
+        <div class="mdc-dialog__scrim"></div>
+    </div>
+
+    <div id="dialogApagarPromocao" class="mdc-dialog"
+         role="alertdialog"
+         aria-modal="true"
+         aria-labelledby="titleApagarPromocao"
+         aria-describedby="contentApagarPromocao">
+        <div class="mdc-dialog__container">
+            <form id="frmApagarPromocao">
+                <div class="mdc-dialog__surface">
+                    <!-- Title cannot contain leading whitespace due to mdc-typography-baseline-top() -->
+                    <h2 class="mdc-dialog__title" id="titleApagarPromocao">Apagar Promocao</h2>
+                    <div class="mdc-dialog__content" id="contentApagarPromocao">
+                        Tem a certeza que pretende retirar este promocao da prateleira?<br>
+                        Nome: <span id="nomeApagarPromocao"></span><br>
+                        Preço: <span id="precoApagarPromocao"></span> kz<br>
+                        Termina em: <span id="dataTerminoApagarPromocao"></span><br>
+
+
+                        <div id="pbApagarPromocao" role="progressbar" class="mdc-linear-progress mdc-linear-progress--indeterminate mdc-linear-progress--closed">
+                            <div class="mdc-linear-progress__buffering-dots"></div>
+                            <div class="mdc-linear-progress__buffer"></div>
+                            <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
+                                <span class="mdc-linear-progress__bar-inner"></span>
+                            </div>
+                            <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+                                <span class="mdc-linear-progress__bar-inner"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <footer class="mdc-dialog__actions">
+                        <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
+                            <span class="mdc-button__label">Não</span>
+                        </button>
+                        <button type="submit" class="mdc-button mdc-dialog__button"> <!--data-mdc-dialog-action="yes">-->
+                            <span class="mdc-button__label">Sim</span>
+                        </button>
+                    </footer>
+                </div>
+            </form>
+        </div>
+        <div class="mdc-dialog__scrim"></div>
+    </div>
+
+    <button id="btnAddPromocao" class="mdc-fab" data-mdc-auto-init="MDCRipple" style="float: right; position: fixed; right: 5vh; bottom: 5vw; color: white"><i class="material-icons mdc-fab__icon">add</i></button>
+
+    <script src="../js/verify.js"></script>
+</div>
+
+

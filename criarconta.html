@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="pt-PT" class="mdc-typography">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Lubeasy</title>
+    <style>
+        :root{
+            --mdc-theme-primary : #fe4600 !important;
+            --mdc-theme-secondary : #fe4600 !important;
+            --mdc-theme-on-primary : #ff8800 !important;
+            --mdc-theme-on-secondary : rgb(255, 80, 0) !important;
+
+            --mdc-theme-background: #000000 !important;
+            /*--mdc-theme-surface: #000000 !important;*/
+            --mdc-theme-on-surface: #000000 !important;
+
+            --mdc-theme-text-primary-on-light: rgba(255, 80, 0, 0.87) !important;
+            --mdc-theme-text-secondary-on-light: rgba(0, 0, 0, 0.87) !important;
+            --mdc-theme-text-hint-on-light: rgba(0, 0, 0, 0.87) !important;
+            /*--mdc-theme-text-disabled-on-light: !important;
+            --mdc-theme-text-icon-on-light: !important;*/
+
+        }
+        body {
+            display: flex;
+            min-height: calc(100vh - 64px);
+        }
+        .mdc-drawer-app-content {
+            flex: auto;
+            overflow:hidden;
+            position: relative;
+        }
+        .main-content {
+            overflow-y: hidden;
+            height: calc(100% - 64px);
+        }
+        #app-bar {
+            background-color: white;
+            position: absolute;
+            color: rgba(0,0,0,0.87);
+        }
+        .mdc-top-app-bar {
+            z-index: 7;
+        }
+        .txtCriarConta{
+            color: #0073ff;
+            text-decoration: none;
+        }
+        .txtCriarConta:hover{
+            color: #0021ff;
+        }
+
+    </style>
+    <link rel="stylesheet" href="styles/material-components-web.min.css">
+    <link href="styles/estilos.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+<header class="mdc-top-app-bar" id="app-bar" style="left: 0;top: 0;">
+    <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <a href="#" id="open_drawer" class="demo-menu material-icons mdc-top-app-bar__navigation-icon">store</a>
+            <span class="mdc-top-app-bar__title">Lubeasy</span>
+        </section>
+
+    </div>
+</header>
+
+​
+<div class="mdc-drawer-app-content mdc-top-app-bar--fixed-adjust">
+    <main class="main-content" id="main-content">
+                        <form id="frmCriarConta">
+                            <div class="mdc-layout-grid">
+                                <div class="mdc-layout-grid__inner">
+                                    <div class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-4-phone" >
+                                        <div class="mdc-text-field" data-mdc-auto-init="MDCTextField" style="width: 100%;">
+                                            <input required id="nome" type="text" class="mdc-text-field__input" title="nome" >
+                                            <div class="mdc-line-ripple"></div>
+                                            <label class="mdc-floating-label">Nome</label>
+                                        </div>
+                                    </div>
+                                    <div class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-4-phone" >
+                                        <div class="mdc-text-field" data-mdc-auto-init="MDCTextField" style="width: 100%;">
+                                            <input required id="email" type="email" class="mdc-text-field__input" title="email" >
+                                            <div class="mdc-line-ripple"></div>
+                                            <label class="mdc-floating-label">Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-4-phone" >
+                                        <div class="mdc-text-field" data-mdc-auto-init="MDCTextField" style="width: 100%;">
+                                            <input id="localDeReferencia" type="text" class="mdc-text-field__input" title="Local de Referência ex: depois da..." >
+                                            <div class="mdc-line-ripple"></div>
+                                            <label class="mdc-floating-label">Local de Referência</label>
+                                        </div>
+                                    </div>
+                                    <div class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-4-phone" >
+                                        <div class="mdc-text-field" data-mdc-auto-init="MDCTextField" style="width: 100%;">
+                                            <input required id="endereco" type="text" class="mdc-text-field__input" title="Endereço">
+                                            <div class="mdc-line-ripple"></div>
+                                            <label class="mdc-floating-label ">Endereço</label>
+                                        </div>
+                                    </div>
+                                    <div class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-4-phone">
+                                        <div class="mdc-text-field mdc-text-field--with-leading-icon" data-mdc-auto-init="MDCTextField" style="width: 100%;">
+                                            <i class="material-icons mdc-text-field__icon">query_builder</i>
+                                            <input required id="horario" type="text" class="mdc-text-field__input" title="horario">
+                                            <div class="mdc-line-ripple"></div>
+                                            <label class="mdc-floating-label">Horário</label>
+                                        </div>
+                                    </div>
+                                    <div class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-4-phone">
+                                        <div class="mdc-text-field mdc-text-field--with-leading-icon" data-mdc-auto-init="MDCTextField" style="width: 100%;">
+                                            <i class="material-icons mdc-text-field__icon">phone</i>
+                                            <input required id="telefone" type="number" min="900000000" max="244999999999" class="mdc-text-field__input" title="telefone">
+                                            <div class="mdc-line-ripple"></div>
+                                            <label class="mdc-floating-label">Telefone</label>
+                                        </div>
+                                    </div>
+                                    <div class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-4-phone">
+                                        <div class="mdc-text-field mdc-text-field--textarea" data-mdc-auto-init="MDCTextField">
+                                            <textarea title="objectivo" required id="objectivo" class="mdc-text-field__input" rows="2" cols="40"></textarea>
+                                            <div class="mdc-notched-outline">
+                                                <div class="mdc-notched-outline__leading"></div>
+                                                <div class="mdc-notched-outline__notch">
+                                                    <label class="mdc-floating-label">Objectivo</label>
+                                                </div>
+                                                <div class="mdc-notched-outline__trailing"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-4-phone">
+                                        <div class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-4-phone">
+                                            <div class="mdc-select" data-mdc-auto-init="MDCSelect" style="width: 100%;">
+                                                <i class="mdc-select__dropdown-icon"></i>
+                                                <select id="categoria" class="mdc-select__native-control">
+                                                    <option value="Restaurante">Restaurante</option>
+                                                    <option value="Pizaria">Pizaria</option>
+                                                    <option value="Hamburgaria">Hamburgaria</option>
+                                                    <option value="Churrascaria">Churrascaria</option>
+                                                    <option value="Pastelaria">Pastelaria</option>
+                                                    <option value="Padaria">Padaria</option>
+                                                </select>
+                                                <label for="categoria" class="mdc-floating-label">Categoria</label>
+                                                <div class="mdc-line-ripple"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-4-phone">
+                                        <div class="mdc-select" data-mdc-auto-init="MDCSelect" style="width: 100%;">
+                                            <i class="mdc-select__dropdown-icon"></i>
+                                            <select id="provincia" class="mdc-select__native-control">
+                                                <option value="Huila" >Huila</option>
+                                            </select>
+                                            <label for="provincia" class="mdc-floating-label">Província</label>
+                                            <div class="mdc-line-ripple"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-4-phone">
+                                        <div class="mdc-select" data-mdc-auto-init="MDCSelect" style="width: 100%;">
+                                            <i class="mdc-select__dropdown-icon"></i>
+                                            <select id="municipio" class="mdc-select__native-control">
+                                                <option value="Caconda">Caconda</option>
+                                                <option value="Cacula">Cacula</option>
+                                                <option value="Caluquembe">Caluquembe</option>
+                                                <option value="Chiage">Chiage</option>
+                                                <option value="Chibia">Chibia</option>
+                                                <option value="Chicomba">Chicomba</option>
+                                                <option value="Chipindo">Chipindo</option>
+                                                <option value="Humpata">Humpata</option>
+                                                <option value="Jamba">Jamba</option>
+                                                <option value="Kuvango">Kuvango</option>
+                                                <option value="Lubango">Lubango</option>
+                                                <option value="Matala">Matala</option>
+                                                <option value="Quilengues">Quilengues</option>
+                                                <option value="Quipungo">Quipungo</option>
+                                            </select>
+                                            <label for="municipio" class="mdc-floating-label">Municipio</label>
+                                            <div class="mdc-line-ripple"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h5 class="mdc-typography--headline5">Senha</h5>
+                                <div class="mdc-layout-grid__inner">
+                                    <div class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-4-phone" >
+                                        <div class="mdc-text-field" data-mdc-auto-init="MDCTextField" style="width: 100%;">
+                                            <input required id="senha" type="password" class="mdc-text-field__input" title="senha" >
+                                            <div class="mdc-line-ripple"></div>
+                                            <label class="mdc-floating-label">Senha</label>
+                                        </div>
+                                    </div>
+                                    <div class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-4-phone" >
+                                        <div class="mdc-text-field" data-mdc-auto-init="MDCTextField" style="width: 100%;">
+                                            <input required id="confirmarSenha" type="password" class="mdc-text-field__input" title="senha" >
+                                            <div class="mdc-line-ripple"></div>
+                                            <label class="mdc-floating-label">Confirmar senha</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h5 class="mdc-typography--headline5">Pagamentos</h5>
+                                <div class="mdc-layout-grid__inner">
+                                    <div class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-4-phone">
+                                        <div class="mdc-form-field mdc-form-field--align-end">
+                                            <div class="mdc-checkbox" data-mdc-auto-init="MDCCheckbox">
+                                                <input type="checkbox" class="mdc-checkbox__native-control" id="typeService" title="Faz serviços de entrega ao domicílio"/>
+                                                <div class="mdc-checkbox__background">
+                                                    <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                                                        <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+                                                    </svg>
+                                                    <div class="mdc-checkbox__mixedmark"></div>
+                                                </div>
+                                            </div>
+                                            <label>Faz serviços de entrega</label>
+                                        </div>
+
+
+                                        <div class="mdc-text-field" data-mdc-auto-init="MDCTextField">
+                                            <input id="taxaDeEntrega" type="number" class="mdc-text-field__input" title="Taxa de Entrega em Kwanzas">
+                                            <div class="mdc-line-ripple"></div>
+                                            <label class="mdc-floating-label">Taxa de Entrega</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-4-phone">
+                                        <div class="mdc-form-field mdc-form-field--align-end">
+                                            <div class="mdc-checkbox" data-mdc-auto-init="MDCCheckbox">
+                                                <input type="checkbox" class="mdc-checkbox__native-control" id="payMoney" title="Aceita pagamentos à dinehiro">
+                                                <div class="mdc-checkbox__background">
+                                                    <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                                                        <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+                                                    </svg>
+                                                    <div class="mdc-checkbox__mixedmark"></div>
+                                                </div>
+                                            </div>
+                                            <label>A dinheiro</label>
+                                        </div>
+                                    </div>
+                                    <div class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-4-phone">
+                                        <div class="mdc-form-field mdc-form-field--align-end">
+                                            <div class="mdc-checkbox" data-mdc-auto-init="MDCCheckbox">
+                                                <input type="checkbox" class="mdc-checkbox__native-control" id="payTPA" title="Aceita pagamentos por TPA">
+                                                <div class="mdc-checkbox__background">
+                                                    <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                                                        <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+                                                    </svg>
+                                                    <div class="mdc-checkbox__mixedmark"></div>
+                                                </div>
+                                            </div>
+                                            <label>TPA (máquina)</label>
+                                        </div>
+                                    </div>
+                                    <div class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-4-phone">
+                                        <div class="mdc-form-field mdc-form-field--align-end">
+                                            <div class="mdc-checkbox" data-mdc-auto-init="MDCCheckbox">
+                                                <input type="checkbox" class="mdc-checkbox__native-control" title="Aceita pagamentos online" id="payOnline">
+                                                <div class="mdc-checkbox__background">
+                                                    <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                                                        <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+                                                    </svg>
+                                                    <div class="mdc-checkbox__mixedmark"></div>
+                                                </div>
+                                            </div>
+                                            <label>Online (kamba - carteira virtual)</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="pbCriarConta" role="progressbar" class="mdc-linear-progress mdc-linear-progress--indeterminate mdc-linear-progress--closed">
+                                    <div class="mdc-linear-progress__buffering-dots"></div>
+                                    <div class="mdc-linear-progress__buffer"></div>
+                                    <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
+                                        <span class="mdc-linear-progress__bar-inner"></span>
+                                    </div>
+                                    <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+                                        <span class="mdc-linear-progress__bar-inner"></span>
+                                    </div>
+                                </div>
+                                <div class="mdc-layout-grid__inner">
+                                    <div class="mdc-layout-grid__cell--span-10-desktop mdc-layout-grid__cell--span-6-tablet mdc-layout-grid__cell--span-3-phone"></div>
+                                    <div class="mdc-layout-grid__cell--span-2-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-1-phone">
+                                        <button type="submit" class="mdc-button" >Criar Conta</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+
+
+
+                    <p class="mdc-typography--caption" style="text-align: center;">Já tens uma conta? <a href="login.html" class="txtCriarConta">Entrar</a></p>
+                    <p class="mdc-typography--caption" style="color: grey;text-align: center;">Lubeasy &copy 2019</p>
+
+
+        <div id="failResponse"  class="mdc-snackbar">
+            <div class="mdc-snackbar__surface">
+                <div class="mdc-snackbar__label"
+                     role="status"
+                     aria-live="polite">
+                    Problemas com o login. Verifique as credenciais e a ligação com a internet
+                </div>
+            </div>
+        </div>
+
+    </main>
+</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/material-components-web.min.js"></script>
+<script type="module" src="js/criarconta.js"></script>
+<script>
+    window.mdc.autoInit();
+</script>
+
+</body>
+</html>

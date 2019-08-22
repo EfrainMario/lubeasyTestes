@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c2afa073-3778-489f-b189-994ad83cb1c7" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="NotificacaoDao.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/restaurante/v1/model/NotificacaoDao.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NotificacaoRouter.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/restaurante/v1/router/NotificacaoRouter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseConfig.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/restaurante/v1/config/DatabaseConfig.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>busbo</find>
+      <find>lugarcliente</find>
+      <find>criacao</find>
+      <find>RestauranteController</find>
+      <find>problema</find>
+      <find>Problema nos campos</find>
+      <find>PHP</find>
+      <find>restaurantes</find>
+      <find>restaurante</find>
+      <find>Pedido</find>
+      <find>pedidos</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>lugarcliente</replace>
+      <replace>dataDeCriacao</replace>
+      <replace>Helper</replace>
+      <replace>notificacao</replace>
+      <replace>Notificacao</replace>
+      <replace>notificacoes</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/Restaurante/v1/index.js" />
+        <option value="$PROJECT_DIR$/Restaurante/v1/router/RestauranteRouter.js" />
+        <option value="$PROJECT_DIR$/Restaurante/v1/controller/RestauranteController.js" />
+        <option value="$PROJECT_DIR$/Restaurante/v1/util/GeralHelper.js" />
+        <option value="$PROJECT_DIR$/restaurante/v1/model/PromocaoDao.js" />
+        <option value="$PROJECT_DIR$/restaurante/v1/controller/PromocaoController.js" />
+        <option value="$PROJECT_DIR$/restaurante/v1/util/Timmers.js" />
+        <option value="$PROJECT_DIR$/restaurante/v1/controller/ProdutoController.js" />
+        <option value="$PROJECT_DIR$/restaurante/v1/router/PromocaoRouter.js" />
+        <option value="$PROJECT_DIR$/restaurante/v1/router/AvaliacaoRestauranteRouter.js" />
+        <option value="$PROJECT_DIR$/restaurante/v1/router/FCMRouter.js" />
+        <option value="$PROJECT_DIR$/restaurante/v1/router/ProdutoRouter.js" />
+        <option value="$PROJECT_DIR$/restaurante/v1/model/ProdutoDao.js" />
+        <option value="$PROJECT_DIR$/restaurante/v1/controller/PedidoController.js" />
+        <option value="$PROJECT_DIR$/restaurante/v1/router/PedidoRouter.js" />
+        <option value="$PROJECT_DIR$/restaurante/v1/controller/FCMController.js" />
+        <option value="$PROJECT_DIR$/restaurante/v1/util/Util.js" />
+        <option value="$PROJECT_DIR$/restaurante/v1/router/RestauranteRouter.js" />
+        <option value="$PROJECT_DIR$/restaurante/v1/model/RestauranteDao.js" />
+        <option value="$PROJECT_DIR$/restaurante/v1/util/GeralHelper.js" />
+        <option value="$PROJECT_DIR$/restaurante/v1/controller/RestauranteController.js" />
+        <option value="$PROJECT_DIR$/restaurante/v1/model/PedidoDao.js" />
+        <option value="$PROJECT_DIR$/restaurante/v1/router/NotificacaoRouter.js" />
+        <option value="$PROJECT_DIR$/restaurante/v1/controller/NotificacaoController.js" />
+        <option value="$PROJECT_DIR$/restaurante/v1/index.js" />
+        <option value="$PROJECT_DIR$/restaurante/v1/model/NotificacaoDao.js" />
+        <option value="$PROJECT_DIR$/restaurante/v1/config/DatabaseConfig.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-6" />
+    <option name="y" value="1" />
+    <option name="width" value="1300" />
+    <option name="height" value="768" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="nodeAp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn nodejs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodeAp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn nodejs" type="462c0819:PsiDirectoryNode" />
+              <item name="restaurante" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodeAp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn nodejs" type="462c0819:PsiDirectoryNode" />
+              <item name="restaurante" type="462c0819:PsiDirectoryNode" />
+              <item name="v1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodeAp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn nodejs" type="462c0819:PsiDirectoryNode" />
+              <item name="restaurante" type="462c0819:PsiDirectoryNode" />
+              <item name="v1" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="Noti&#9;FILE&#9;file://C:/xampp/htdocs/www/Vectis/learn nodejs/restaurante/v1/model/NotificacaoDao.js&#10;read&#9;FILE&#9;file://C:/xampp/htdocs/www/Vectis/learn nodejs/node_modules/mysql/Readme.md&#10;pedidoDao&#9;FILE&#9;file://C:/xampp/htdocs/www/Vectis/learn nodejs/restaurante/v1/model/PedidoDao.js&#10;readme&#9;FILE&#9;file://C:/xampp/htdocs/www/Vectis/learn nodejs/node_modules/mysql/Readme.md&#10;cliente&#9;null&#9;null" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.3.1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../PTFinaLServer" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\www\Vectis\learn nodejs\restaurante\v1\router" />
+      <recent name="C:\xampp\htdocs\www\Vectis\learn nodejs\restaurante\v1\controller" />
+      <recent name="C:\xampp\htdocs\www\Vectis\learn nodejs\restaurante\v1\model" />
+      <recent name="C:\xampp\htdocs\www\Vectis\learn nodejs\restaurante\v1\util" />
+      <recent name="C:\xampp\htdocs\www\Vectis\learn nodejs\node_modules\express-fileupload\lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\www\Vectis\learn nodejs\node_modules\express-fileupload\node_modules" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="app.js" type="NodeJSConfigurationType" factoryName="Node.js" nameIsGenerated="true" path-to-js-file="app.js" working-dir="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c2afa073-3778-489f-b189-994ad83cb1c7" name="Default" comment="" />
+      <created>1563871354808</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563871354808</updated>
+      <workItem from="1563871380000" duration="83000" />
+      <workItem from="1563884945135" duration="93000" />
+      <workItem from="1563945840281" duration="497000" />
+      <workItem from="1563946779948" duration="630000" />
+      <workItem from="1563951247350" duration="486000" />
+      <workItem from="1563986380541" duration="1657000" />
+      <workItem from="1563989046998" duration="782000" />
+      <workItem from="1563989863843" duration="599000" />
+      <workItem from="1563990859862" duration="597000" />
+      <workItem from="1563996106007" duration="1184000" />
+      <workItem from="1563997866150" duration="596000" />
+      <workItem from="1564000078173" duration="599000" />
+      <workItem from="1564001844393" duration="596000" />
+      <workItem from="1564003685560" duration="596000" />
+      <workItem from="1564005569050" duration="615000" />
+      <workItem from="1564008502450" duration="429000" />
+      <workItem from="1564099046004" duration="1676000" />
+      <workItem from="1564100959515" duration="1700000" />
+      <workItem from="1564102727068" duration="1771000" />
+      <workItem from="1564104551903" duration="1776000" />
+      <workItem from="1564106381353" duration="1845000" />
+      <workItem from="1564143638063" duration="1332000" />
+      <workItem from="1564145726431" duration="1761000" />
+      <workItem from="1564147547830" duration="1820000" />
+      <workItem from="1564149420873" duration="1765000" />
+      <workItem from="1564151239362" duration="1784000" />
+      <workItem from="1564153195384" duration="1741000" />
+      <workItem from="1564155013192" duration="1753000" />
+      <workItem from="1564156829894" duration="1765000" />
+      <workItem from="1564158735406" duration="1338000" />
+      <workItem from="1564160550944" duration="1847000" />
+      <workItem from="1564168128809" duration="852000" />
+      <workItem from="1564170048846" duration="937000" />
+      <workItem from="1564171866792" duration="598000" />
+      <workItem from="1564184524155" duration="1184000" />
+      <workItem from="1564186206781" duration="969000" />
+      <workItem from="1564188033949" duration="705000" />
+      <workItem from="1564181756702" duration="595000" />
+      <workItem from="1564185007647" duration="1751000" />
+      <workItem from="1564186826496" duration="819000" />
+      <workItem from="1564188746648" duration="1206000" />
+      <workItem from="1564190578831" duration="829000" />
+      <workItem from="1564188320176" duration="1722000" />
+      <workItem from="1564190238500" duration="1336000" />
+      <workItem from="1564192000112" duration="1213000" />
+      <workItem from="1564194316642" duration="933000" />
+      <workItem from="1564196254825" duration="605000" />
+      <workItem from="1564198039346" duration="702000" />
+      <workItem from="1564200194260" duration="1772000" />
+      <workItem from="1564202027161" duration="974000" />
+      <workItem from="1564206194801" duration="655000" />
+      <workItem from="1564210735480" duration="1803000" />
+      <workItem from="1564212592811" duration="1772000" />
+      <workItem from="1564214430792" duration="1537000" />
+      <workItem from="1564216853952" duration="1542000" />
+      <workItem from="1564218677458" duration="1128000" />
+      <workItem from="1564220490614" duration="959000" />
+      <workItem from="1564222313732" duration="604000" />
+      <workItem from="1564224129993" duration="656000" />
+      <workItem from="1564227476751" duration="1638000" />
+      <workItem from="1564229331642" duration="58000" />
+      <workItem from="1564229543400" duration="157000" />
+      <workItem from="1564257520955" duration="1731000" />
+      <workItem from="1564259441068" duration="1668000" />
+      <workItem from="1564261190453" duration="1769000" />
+      <workItem from="1564263143855" duration="508000" />
+      <workItem from="1564263732926" duration="249000" />
+      <workItem from="1564264866051" duration="1317000" />
+      <workItem from="1564266601502" duration="905000" />
+      <workItem from="1564268429184" duration="442000" />
+      <workItem from="1564294624640" duration="1595000" />
+      <workItem from="1564296331949" duration="1759000" />
+      <workItem from="1564298153599" duration="1261000" />
+      <workItem from="1564299978241" duration="280000" />
+      <workItem from="1564298906770" duration="595000" />
+      <workItem from="1564299648379" duration="1061000" />
+      <workItem from="1564301620231" duration="1576000" />
+      <workItem from="1564303545016" duration="614000" />
+      <workItem from="1564305402393" duration="688000" />
+      <workItem from="1564307219430" duration="1197000" />
+      <workItem from="1564794331513" duration="649000" />
+      <workItem from="1564796278595" duration="788000" />
+      <workItem from="1564798088797" duration="596000" />
+      <workItem from="1564799905095" duration="1248000" />
+      <workItem from="1564801727291" duration="742000" />
+      <workItem from="1564805711446" duration="1322000" />
+      <workItem from="1564807431621" duration="747000" />
+      <workItem from="1564809269236" duration="787000" />
+      <workItem from="1564840459285" duration="1597000" />
+      <workItem from="1564842231317" duration="712000" />
+      <workItem from="1564843321078" duration="637000" />
+      <workItem from="1564844035498" duration="900000" />
+      <workItem from="1564846025148" duration="880000" />
+      <workItem from="1564847901730" duration="1152000" />
+      <workItem from="1564849954605" duration="1035000" />
+      <workItem from="1564851740060" duration="923000" />
+      <workItem from="1564857193528" duration="235000" />
+      <workItem from="1564857476732" duration="1735000" />
+      <workItem from="1564859501109" duration="1685000" />
+      <workItem from="1564861256597" duration="887000" />
+      <workItem from="1564907737951" duration="1440000" />
+      <workItem from="1564909275040" duration="1281000" />
+      <workItem from="1564911570086" duration="607000" />
+      <workItem from="1564913398752" duration="800000" />
+      <workItem from="1564918564241" duration="707000" />
+      <workItem from="1564923975089" duration="611000" />
+      <workItem from="1564924963260" duration="1096000" />
+      <workItem from="1564926685136" duration="1337000" />
+      <workItem from="1564928501768" duration="762000" />
+      <workItem from="1564930319633" duration="1252000" />
+      <workItem from="1564932141513" duration="1642000" />
+      <workItem from="1564934010758" duration="1756000" />
+      <workItem from="1564936564006" duration="660000" />
+      <workItem from="1564944237444" duration="1643000" />
+      <workItem from="1564975205106" duration="911000" />
+      <workItem from="1564976938770" duration="1749000" />
+      <workItem from="1564978772515" duration="980000" />
+      <workItem from="1564980599168" duration="682000" />
+      <workItem from="1564982687471" duration="1438000" />
+      <workItem from="1564984409672" duration="1760000" />
+      <workItem from="1564986227345" duration="77000" />
+      <workItem from="1564980879957" duration="309000" />
+      <workItem from="1565102718197" duration="1127000" />
+      <workItem from="1565104735913" duration="1604000" />
+      <workItem from="1565106882215" duration="1639000" />
+      <workItem from="1565108710763" duration="1715000" />
+      <workItem from="1565110800798" duration="1385000" />
+      <workItem from="1565134498744" duration="203000" />
+      <workItem from="1565354588764" duration="1336000" />
+      <workItem from="1565134737038" duration="1099000" />
+      <workItem from="1565136529848" duration="606000" />
+      <workItem from="1565138319112" duration="731000" />
+      <workItem from="1565371195627" duration="1188000" />
+      <workItem from="1565404972055" duration="1637000" />
+      <workItem from="1565406679011" duration="1753000" />
+      <workItem from="1565408516347" duration="1754000" />
+      <workItem from="1565410366432" duration="974000" />
+      <workItem from="1565412215045" duration="1711000" />
+      <workItem from="1565414051297" duration="1902000" />
+      <workItem from="1565416433864" duration="1761000" />
+      <workItem from="1565418256614" duration="1482000" />
+      <workItem from="1565420076159" duration="758000" />
+      <workItem from="1565421893472" duration="1250000" />
+      <workItem from="1565423711435" duration="683000" />
+      <workItem from="1565425573687" duration="1009000" />
+      <workItem from="1565427426539" duration="968000" />
+      <workItem from="1565431068844" duration="1268000" />
+      <workItem from="1565433058682" duration="1677000" />
+      <workItem from="1565434799601" duration="1624000" />
+      <workItem from="1565436623905" duration="1195000" />
+      <workItem from="1565438443419" duration="315000" />
+      <workItem from="1565540216522" duration="1345000" />
+      <workItem from="1565541981150" duration="1482000" />
+      <workItem from="1565543763512" duration="1491000" />
+      <workItem from="1565545595257" duration="1630000" />
+      <workItem from="1565547401993" duration="1232000" />
+      <workItem from="1565550705200" duration="751000" />
+      <workItem from="1565552521137" duration="1176000" />
+      <workItem from="1565554333198" duration="1173000" />
+      <workItem from="1565556236861" duration="1633000" />
+      <workItem from="1565558078884" duration="1757000" />
+      <workItem from="1565559904393" duration="1754000" />
+      <workItem from="1565561840480" duration="1444000" />
+      <workItem from="1565568459635" duration="51000" />
+      <workItem from="1565597726562" duration="644000" />
+      <workItem from="1565598718363" duration="1798000" />
+      <workItem from="1565600678876" duration="1754000" />
+      <workItem from="1565605689643" duration="1207000" />
+      <workItem from="1565607578809" duration="1390000" />
+      <workItem from="1565609529209" duration="606000" />
+      <workItem from="1565611335244" duration="670000" />
+      <workItem from="1565613266076" duration="1060000" />
+      <workItem from="1565615064436" duration="954000" />
+      <workItem from="1565617052423" duration="1510000" />
+      <workItem from="1565624174923" duration="590000" />
+      <workItem from="1565627105554" duration="704000" />
+      <workItem from="1565628923427" duration="1147000" />
+      <workItem from="1565630845467" duration="1479000" />
+      <workItem from="1565632685893" duration="793000" />
+      <workItem from="1565636537622" duration="1469000" />
+      <workItem from="1565638506708" duration="959000" />
+      <workItem from="1565640273486" duration="946000" />
+      <workItem from="1565724110125" duration="1448000" />
+      <workItem from="1565725861521" duration="752000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="205049000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1296" height="786" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28703704" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.6666667" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28640777" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32928804" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39969134" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/router/PedidoRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/util/GeralHelper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2771">
+          <caret line="163" column="23" selection-start-line="163" selection-start-column="4" selection-end-line="163" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/controller/PedidoController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/model/PedidoDao.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="66" selection-start-line="31" selection-start-column="66" selection-end-line="31" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/router/PedidoRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/controller/PedidoController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/util/GeralHelper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2771">
+          <caret line="163" column="23" selection-start-line="163" selection-start-column="4" selection-end-line="163" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/model/PedidoDao.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/router/PedidoRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/controller/PedidoController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/util/GeralHelper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2771">
+          <caret line="163" column="23" selection-start-line="163" selection-start-column="4" selection-end-line="163" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/model/PedidoDao.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="67" selection-start-line="41" selection-start-column="67" selection-end-line="41" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/router/PedidoRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="45" lean-forward="true" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/util/GeralHelper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2771">
+          <caret line="163" column="23" selection-start-line="163" selection-start-column="4" selection-end-line="163" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/controller/PedidoController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/model/PedidoDao.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="129" lean-forward="true" selection-start-line="40" selection-start-column="129" selection-end-line="40" selection-end-column="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/util/Timmers.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/img/img_54-10-08_27-07-2019_0.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/img/restaurante/img_43-20-16_26-07-2019_0.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/img/restaurante/img_08-39-16_26-07-2019_0.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/img/promocao/img_10-05-18_26-07-2019_0.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/router/PromocaoRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/router/AvaliacaoRestauranteRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/router/AvaliacaoProdutoRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/api-lubseay/cliente-api/dao/AvaliacaoDao.js" />
+    <entry file="file://F:/api-lubseay/cliente-api/dao/RestauranteDao.js" />
+    <entry file="file://F:/api-lubseay/cliente-api/dao/ClienteDao.js" />
+    <entry file="file://F:/api-lubseay/cliente-api/dao/MainPageDao.js" />
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/model/ClienteDao.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="85" column="4" selection-start-line="85" selection-start-column="4" selection-end-line="85" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/router/ProdutoRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/model/ProdutoDao.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/controller/ProdutoController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/router/PedidoRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/controller/FCMController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="59" column="45" selection-start-line="59" selection-start-column="45" selection-end-line="59" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/router/FCMRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/api-lubseay/cliente-api/router/ClienteRouter.js" />
+    <entry file="file://D:/api-lubseay/cliente-api/controller/ClienteController.js" />
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/util/Util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="43" column="43" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/util/GeralHelper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="251" column="58" selection-start-line="251" selection-start-column="58" selection-end-line="251" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/controller/RestauranteController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/model/RestauranteDao.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mysql/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/controller/PedidoController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/controller/NotificacaoController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="21" column="53" lean-forward="true" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="27" column="44" lean-forward="true" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/router/RestauranteRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/model/PedidoDao.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="48" column="16" lean-forward="true" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/config/DatabaseConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/router/NotificacaoRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurante/v1/model/NotificacaoDao.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
