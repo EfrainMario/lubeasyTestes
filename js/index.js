@@ -770,7 +770,7 @@ function paginaPedidos(){
             .fail(function () {
                 $('.mdc-snackbar#failResponse .mdc-snackbar__label').text('Não conseguimos notificar o cliente. Vamos tentar novamente em 10 segundos');
                 new mdc.snackbar.MDCSnackbar(document.querySelector('.mdc-snackbar#failResponse')).open();
-                setTimeout(pushMessageToClient(body), 120000);
+                //setTimeout(pushMessageToClient(body), 120000);
             })
             .always(function () {
 
