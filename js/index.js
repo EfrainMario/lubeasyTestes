@@ -750,6 +750,7 @@ function paginaPedidos(){
     // ---------------------  Util -------------------------   //
     function pushMessageToClient(body) {
         let idCliente = $('div#contentDetails span#idCliente').text();
+        console.log("idCLiente -> ",idCliente);
         new PedidosController().pushMessageTo(idCliente,
             {
                 "notification": {
