@@ -755,9 +755,7 @@ function paginaPedidos(){
             {
                 "notification": {
                     "title": restaurante.nome,
-                    "body": body,
-                    "icon": "firebase-logo.png",
-                    "click_action": "ao.startup.lubeasy.view.activity.PedidoDetailActivity"//"ao.startup.lubssy.activity.PedidoDetailActivity"
+                    "body": body
                 },
                 "data": {
                     "intent": 'pedido',
