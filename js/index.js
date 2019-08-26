@@ -386,7 +386,7 @@ function paginaInicial() {
 
     function initMain() {
         $('span#nome').html(restaurante.nome);
-        $('span#categoria').html(restaurante.categoria);
+        $('span#categoria').html(restaurante.tipoDeRestaurante);
         $('span#telefone').html(restaurante.telefone);
         $('img#restauranteLogotipo').attr('src', restaurante.logotipo);
 
