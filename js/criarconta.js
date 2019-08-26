@@ -34,7 +34,7 @@ $('form#frmCriarConta').submit(function (e) {
                     nome: $('#nome').val(),
                     email: $('#email').val(),
                     localDeReferencia: $('#localDeReferencia').val(),
-                    categoria: $('#categoria').val(),
+                    tipoDeRestaurante: $('#categoria').val(),
                     telefone: $('#telefone').val(),
                     endereco: $('#endereco').val(),
                     senha: senha,
